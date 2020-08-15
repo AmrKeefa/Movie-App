@@ -85,6 +85,7 @@ class DetailsFragment :Fragment() {
         viewModel.getMovieDetils(id)
     }
 
+
     private fun observeMovies(view: View) {
         viewModel.movies.observe(viewLifecycleOwner, Observer { resource ->
             when (resource.state) {
